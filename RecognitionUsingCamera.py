@@ -11,7 +11,7 @@ file = open('weights.pkl','rb')
 weights = pickle.load(file)
 cap = cv2.VideoCapture(0)
 
-users = {0:"Kunal",1:"unknown"}
+users = {0:"Me",1:"unknown"}
 
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
