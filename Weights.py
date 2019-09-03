@@ -1,10 +1,10 @@
 import numpy as np
 import pickle
 
-kunal = np.load('kunal.npy')
-samyak = np.load('samyak.npy')
-kunal = kunal.reshape(400,-1)
-samyak = samyak.reshape(400,-1)
+face_1 = np.load('face_1.npy')
+face_2 = np.load('face_2.npy')
+face_1 = face_1.reshape(400,-1)
+face_2 = face_2.reshape(400,-1)
 faces = np.concatenate([kunal, samyak])
 faces = faces/255.
 labels = np.zeros((faces.shape[0], 1))
